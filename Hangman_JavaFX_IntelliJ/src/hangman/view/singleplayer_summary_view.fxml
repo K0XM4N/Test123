@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="288.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hangman.controller.SingleplayerSummaryController">
+   <children>
+      <Label fx:id="lblWinLoseText" alignment="CENTER" layoutY="34.0" prefHeight="32.0" prefWidth="400.0" text="YOU WON!" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="142.0" layoutY="84.0" prefHeight="32.0" prefWidth="125.0" text="TRY AGAIN?" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnYes" layoutX="85.0" layoutY="209.0" mnemonicParsing="false" onAction="#handleContiunueGame" text="YES">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnNo" layoutX="255.0" layoutY="209.0" mnemonicParsing="false" onAction="#handleBackToMenu" text="NO">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Label fx:id= "lblWordSummary" alignment="TOP_CENTER" layoutX="26.0" layoutY="144.0" prefHeight="32.0" prefWidth="355.0" text="WORD" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
